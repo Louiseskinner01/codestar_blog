@@ -24,13 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3!m=6^vn@gcpmpeo2352nryg+u5up4$sz6c(!@=2#26x45w_=!'
+SECRET_KEY = 'GF6iL1bVW5'
+#'django-insecure-3!m=6^vn@gcpmpeo2352nryg+u5up4$sz6c(!@=2#26x45w_=!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com',
-                 'ci-codestar-blog-app.herokuapp.com']
+                 'ci-codestar-blog-app.herokuapp.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -88,6 +90,10 @@ DATABASES = {
 
 #}
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
