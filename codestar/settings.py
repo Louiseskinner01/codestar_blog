@@ -31,7 +31,7 @@ SECRET_KEY = 'GF6iL1bVW5'
 DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com',
-                 'ci-codestar-blog-app.herokuapp.com',
+                 'codestar-blog-p3.herokuapp.com',
                  '127.0.0.1']
 
 
